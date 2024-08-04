@@ -1,0 +1,79 @@
+body {
+  background-color: black;
+}
+
+.container {
+  max-width: 630px;
+  height: 956px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 200px;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 10px;
+  transition: width 0.5s cubic-bezier(0, 0.5, 0.58, 1);
+  transition: transform 1.5s cubic-bezier(0, 0.5, 0.58, 1);
+  position: relative;
+}
+
+.box:active {
+  width: 200px;
+  height: 300px;
+  transform: rotate(2turn);
+  border: none;
+}
+
+.box-text {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 18%;
+  opacity: 1;
+  transition: opacity 0.5s cubic-bezier(0, 0.5, 0.58, 1);
+}
+
+.box:active p {
+  opacity: 0;
+}
+
+.box::after {
+  content: "I love you :3";
+  color: rgb(211, 211, 211);
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(0, 0.5, 0.58, 1);
+}
+
+.box:active::after {
+  opacity: 1;
+}
+
+.hearth {
+  position: relative;
+}
+
+.hearth-icon {
+  width: 300px;
+  top: -170px;
+  left: -42.5px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(0, 0.5, 0.58, 1);
+}
+
+.hearth-icon:active {
+  opacity: 1;
+}
