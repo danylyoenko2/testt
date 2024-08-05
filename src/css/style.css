@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-  max-width: 630px;
+  max-width: 530px;
   height: 956px;
   padding-left: 15px;
   padding-right: 15px;
@@ -17,11 +17,11 @@ body {
 
 .main-title {
   position: absolute;
-  width: 482px;
+  width: 350px;
   text-align: center;
   top: 100px;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .box-1 {
