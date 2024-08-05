@@ -17,7 +17,7 @@ body {
 
 .main-title {
   position: absolute;
-  width: 350px;
+  max-width: 300px;
   text-align: center;
   top: 100px;
   font-weight: 600;
