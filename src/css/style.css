@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 .container {
@@ -15,17 +15,20 @@ body {
   position: relative;
 }
 
-.box-1 {
-  font-weight: 600;
-  font-size: 20px;
+.main-title {
+  position: absolute;
+  width: 482px;
   text-align: center;
+  top: 100px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.box-1 {
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border: 2px solid black;
-  padding: 16px 32px;
-  border-radius: 10px;
   transition: opacity 0.2s ease;
   position: relative;
 }
@@ -44,42 +47,172 @@ body {
   align-items: center;
   cursor: pointer;
   position: absolute;
-  right: -100px;
-  bottom: -100px;
-  width: 100px;
-  height: 100px;
-  background-color: rgb(244, 133, 235);
-  transform: rotate(-45deg);
-  margin: 50px;
-  transition-delay: 0.5s;
-}
-
-.heart:before,
-.heart:after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: rgb(244, 133, 235);
+  overflow: hidden;
   border-radius: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
 }
 
-.heart:before {
-  top: -50px;
-  left: 0;
-}
-
-.heart:after {
-  left: 50px;
-  top: 0;
-}
-
-.text {
+.heart::before {
+  content: "'Beer lovers' Issus & Satan ";
+  width: 110px;
   position: absolute;
-  font-weight: 600;
-  font-size: 20px;
+  display: block;
   text-align: center;
-  color: #ffc7e1;
-  transform: rotate(45deg);
+  box-shadow: 0px 5px 15px 0px rgb(41, 41, 41);
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 20px;
+  color: #ffffff;
+  top: 40px;
+  transform: translate(-200%);
+  transition: transform 1s ease;
+  transition-delay: 0.3s;
+  z-index: 3;
+}
+
+.heart:hover::before {
+  transform: translate(0);
+}
+
+.heart::after {
+  content: "";
+  display: block;
+  text-align: center;
+  background-image: url(../img/ббб.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 100px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 1s ease;
+  transition-delay: 0.3s;
+  z-index: 2;
+}
+
+.heart:hover::after {
+  opacity: 1;
+}
+
+.liquid-heart {
+  position: absolute;
+  top: -100px;
+  left: 1px;
+  width: 500px;
+  height: 500px;
+  background-color: #ff4949;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.liquid-heart::after,
+.liquid-heart::before {
+  content: "";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00000000;
+}
+
+.liquid-heart::before {
+  border-radius: 45%;
+  background-color: rgba(20, 20, 20, 1);
+  animation: animate 5s linear infinite;
+}
+
+.liquid-heart::after {
+  border-radius: 40%;
+  background-color: rgba(20, 20, 20, 0.5);
+  animation: animate 10s linear infinite;
+}
+
+.heart-text {
+  position: absolute;
+  text-transform: uppercase;
+  box-shadow: 0px 5px 15px 0px rgb(41, 41, 41);
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: #ffffff;
   z-index: 1;
+  opacity: 1;
+  transition: opacity 0.8s ease;
+  transition-delay: 0.3s;
+}
+
+.heart:hover .heart-text {
+  opacity: 0;
+}
+
+/* ============================================== */
+
+.btn {
+  position: relative;
+  padding: 20px 40px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+.btn .text-btn {
+  position: relative;
+  color: #fff;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 4px;
+  z-index: 1;
+}
+
+.btn .liquid {
+  position: absolute;
+  top: -100px;
+  left: 1px;
+  width: 250px;
+  height: 250px;
+  background-color: #4973ff;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.btn .liquid::after,
+.btn .liquid::before {
+  content: "";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background-color: #000;
+}
+
+.btn .liquid::before {
+  border-radius: 45%;
+  background-color: rgba(20, 20, 20, 1);
+  animation: animate 5s linear infinite;
+}
+
+.btn .liquid::after {
+  border-radius: 40%;
+  background-color: rgba(20, 20, 20, 0.5);
+  animation: animate 10s linear infinite;
+}
+
+.btn:hover .liquid {
+  top: -160px;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
 }
