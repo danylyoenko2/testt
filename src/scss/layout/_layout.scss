@@ -1,0 +1,15 @@
+.container-grid-all {
+  max-width: 530px;
+  min-height: 100vw;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}

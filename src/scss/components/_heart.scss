@@ -1,0 +1,77 @@
+.container-heart {
+  position: relative;
+}
+
+.heart {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  margin-top: 370px;
+}
+
+.heart::before {
+  content: "'Beer lovers' Issus & Satan ";
+  width: 110px;
+  position: absolute;
+  display: block;
+  text-align: center;
+  box-shadow: 0px 5px 15px 0px rgb(41, 41, 41);
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 20px;
+  color: #ffffff;
+  top: 40px;
+  transform: translate(-200%);
+  transition: transform 1s ease;
+  transition-delay: 0.3s;
+  z-index: 3;
+}
+
+.heart:hover::before {
+  transform: translate(0);
+}
+
+.heart::after {
+  content: "";
+  display: block;
+  text-align: center;
+  background-image: url(../img/ббб.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 100px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 1s ease;
+  transition-delay: 0.3s;
+  z-index: 2;
+}
+
+.heart:hover::after {
+  opacity: 1;
+}
+
+.heart-text {
+  position: absolute;
+  text-transform: uppercase;
+  box-shadow: 0px 5px 15px 0px rgb(41, 41, 41);
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.8s ease;
+  transition-delay: 0.3s;
+}
+
+.heart:hover .heart-text {
+  opacity: 0;
+}

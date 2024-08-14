@@ -1,0 +1,13 @@
+.box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  position: relative;
+  margin-top: 150%;
+}
+
+.box-1.hidden {
+  display: none;
+}
