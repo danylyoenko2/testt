@@ -247,3 +247,9 @@
     transform: rotate(0);
   }
 }
+
+@media (max-width: 479px) {
+  .burger-container {
+    width: 300px;
+  }
+}
