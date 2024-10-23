@@ -11,9 +11,11 @@
 
 const menu = document.querySelector(".dropdown-menu");
 const bgMenu = document.querySelector(".menu-container");
+const btn = document.querySelector(".btn-container");
 
 document.querySelector(".menu-toggle").addEventListener("click", function () {
   this.classList.toggle("active");
+  btn.classList.toggle("active");
   bgMenu.classList.toggle("active");
   menu.classList.toggle("open");
   if (menu.style.display === "flex") {
