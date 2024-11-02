@@ -624,3 +624,64 @@ button {
   font-size: 16px;
   margin-left: 10px;
 }
+
+.dropped-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #918787;
+  border-radius: 30px;
+  max-width: 300px;
+}
+
+.text {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.dropped-btn {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color: inherit;
+}
+.dropped-btn::before {
+  content: url(../img/square-down.svg);
+  width: 24px;
+  height: 24px;
+  transform: rotate(-90deg);
+  transition: transform 0.2s ease;
+}
+.dropped-btn.rotate::before {
+  transform: rotate(0);
+}
+
+.dropped-content {
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 250px;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  background-color: #5d5757;
+  color: white;
+  animation: show 0.5s ease backwards;
+}
+
+@keyframes show {
+  from {
+    display: none;
+    opacity: 0;
+  }
+  to {
+    display: block;
+    opacity: 1;
+  }
+}

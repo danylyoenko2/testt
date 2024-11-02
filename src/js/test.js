@@ -1,12 +1,18 @@
-const arr = [1, 2, 3];
+"use strict";
 
-const arrObj = {
-  0: "a",
-  1: "b",
-  2: "c",
-};
+const content = document.querySelector(".dropped-content");
+const btn = document.querySelector(".dropped-btn");
 
-const obj = {
-  Anna: 500,
-  Alice: 800,
-};
+content.style.display = "none";
+
+btn.addEventListener("click", function () {
+  btn.classList.toggle("rotate");
+
+  if (content.style.display === "none") {
+    content.style.display = "block";
+  } else {
+    content.style.display = "none";
+  }
+  content.innerHTML =
+    "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet neque sequi earum nemo vel dignissimos libero explicabo sed exercitationem </p>";
+});
