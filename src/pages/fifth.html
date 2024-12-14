@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script type="module" src="../js/scroll.js"></script>
+    <script type="module" src="../js/content.js"></script>
+    <script type="module" src="../js/index.js"></script>
+    <title>217</title>
+  </head>
+  <body>
+    <div class="container-grid-all fifth">
+      <header class="header">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="list-item">
+              <a href="../../index.html" class="item">Page 1</a>
+            </li>
+            <li class="list-item">
+              <a href="../pages/second.html" class="item">Page 2</a>
+            </li>
+            <li class="list-item">
+              <a href="./third.html" class="item">Page 3</a>
+            </li>
+            <li class="list-item">
+              <a href="./fourth.html" class="item">Page 4</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="item link">Page 5</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <section class="faq">
+          <div class="container faq__container">
+            <h2 class="faq__title">FAQ</h2>
+            <div class="details__container">
+              <details class="detail" name="faq">
+                <summary class="question">
+                  <div class="question__block">
+                    <span class="faq__number">01</span>
+                    <p class="question_text">
+                      How to pair with a mobile device?
+                    </p>
+                  </div>
+
+                  <button class="question__btn">?</button>
+                </summary>
+                <div class="answer">
+                  <p class="answer__text">
+                    To pair with a mobile device, turn on your headphones,
+                    enable Bluetooth on your device, and select the Bose NC 700
+                    from the available devices list.
+                  </p>
+                </div>
+              </details>
+
+              <details class="detail" name="faq">
+                <summary class="question">
+                  <div class="question__block">
+                    <span class="faq__number">02</span>
+                    <p class="question_text">
+                      What is the wireless range of the Bose NC 700?
+                    </p>
+                  </div>
+
+                  <div class="container__button">
+                    <button
+                      class="question__btn"
+                      aria-label="Show hint"
+                      onclick="this.closest('details').toggleAttribute('open')"
+                    >
+                      ?
+                    </button>
+                  </div>
+                </summary>
+                <div class="answer">
+                  <p class="answer__text">
+                    The wireless range of the Bose NC 700 headphones is up to 10
+                    meters (33 feet) in an open space.
+                  </p>
+                </div>
+              </details>
+
+              <details class="detail" name="faq">
+                <summary class="question">
+                  <div class="question__block">
+                    <span class="faq__number">03</span>
+                    <p class="question_text">
+                      How do I fold the Bose NC 700 headphones for storage?
+                    </p>
+                  </div>
+
+                  <button
+                    class="question__btn"
+                    aria-label="Show hint"
+                    onclick="this.closest('details').toggleAttribute('open')"
+                  >
+                    ?
+                  </button>
+                </summary>
+                <div class="answer">
+                  <p class="answer__text">
+                    The Bose NC 700 headphones do not fold completely but the
+                    earcups rotate to lay flat for easy storage in the provided
+                    case.
+                  </p>
+                </div>
+              </details>
+
+              <details class="detail" name="faq">
+                <summary class="question">
+                  <div class="question__block">
+                    <span class="faq__number">04</span>
+                    <p class="question_text">
+                      Does the guarantee work internationally?
+                    </p>
+                  </div>
+
+                  <button
+                    class="question__btn"
+                    aria-label="Show hint"
+                    onclick="this.closest('details').toggleAttribute('open')"
+                  >
+                    ?
+                  </button>
+                </summary>
+                <div class="answer">
+                  <p class="answer__text">
+                    Yes, the guarantee works internationally, but terms and
+                    conditions may vary depending on the region.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </section>
+        <section class="copied">
+          <h2 class="copied__title">copy section</h2>
+          <label for="number">
+            <input
+              type="text"
+              class="extend__text fill__input"
+              maxlength="30"
+              placeholder="fill text"
+            />
+            <input
+              class="extend__number fill__input"
+              type="number"
+              id="number"
+              placeholder="fill number"
+            />
+            <button class="extend__btn">Copy more!</button>
+          </label>
+          <label for="checkbox" class="checkbox">
+            <p class="checkbox__text">Add number</p>
+            <input type="checkbox" id="checkbox" class="extend__checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <div class="smocontainer"></div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

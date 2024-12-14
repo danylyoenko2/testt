@@ -6,3 +6,17 @@
   font-weight: 600;
   font-size: 24px;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  max-width: 300px;
+  letter-spacing: 0.02em;
+  display: block;
+}
