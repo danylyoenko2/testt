@@ -24,7 +24,6 @@
   display: none;
   left: 50%;
   transform: translateY(-150%) translateX(-50%);
-  animation: fadeDown 0.3s ease;
   position: relative;
 
   &.active {
@@ -37,6 +36,7 @@
     background-color: #000000e4;
     transform: translateY(0);
     transition: transform 0.3s ease, left 0.3s ease;
+    animation: fadeUp 0.3s ease;
   }
 }
 
@@ -236,21 +236,6 @@
   100% {
     display: block;
     transform: translateY(0);
-  }
-}
-
-@keyframes fadeDown {
-  0% {
-    display: block;
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  100% {
-    display: none;
-    transform: translateY(-150%);
-    opacity: 0;
-    position: relative;
   }
 }
 

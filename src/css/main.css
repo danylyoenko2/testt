@@ -397,7 +397,6 @@ button {
   display: none;
   left: 50%;
   transform: translateY(-150%) translateX(-50%);
-  animation: fadeDown 0.3s ease;
   position: relative;
 }
 .nav.active {
@@ -410,6 +409,7 @@ button {
   background-color: rgba(0, 0, 0, 0.8941176471);
   transform: translateY(0);
   transition: transform 0.3s ease, left 0.3s ease;
+  animation: fadeUp 0.3s ease;
 }
 
 .nav-list {
@@ -569,19 +569,6 @@ button {
   100% {
     display: block;
     transform: translateY(0);
-  }
-}
-@keyframes fadeDown {
-  0% {
-    display: block;
-    transform: translateY(0);
-    opacity: 1;
-  }
-  100% {
-    display: none;
-    transform: translateY(-150%);
-    opacity: 0;
-    position: relative;
   }
 }
 @keyframes fadeLeft {
