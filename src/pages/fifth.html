@@ -4,21 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/main.css" />
+    <script type="module" src="../js/burger.js"></script>
     <script type="module" src="../js/scroll.js"></script>
     <script type="module" src="../js/content.js"></script>
     <script type="module" src="../js/index.js"></script>
+
     <title>217</title>
   </head>
   <body>
     <div class="container-grid-all fifth">
       <header class="header">
+        <div class="header__mix">
+          <a href="#" class="header__logo"
+            ><img src="../img/logo.svg" alt="logo" class="logo__img"
+          /></a>
+          <button class="burger">
+            <span class="burger__stick"></span>
+          </button>
+        </div>
         <nav class="nav">
           <ul class="nav-list">
             <li class="list-item">
               <a href="../../index.html" class="item">Page 1</a>
             </li>
             <li class="list-item">
-              <a href="../pages/second.html" class="item">Page 2</a>
+              <a href="./second.html" class="item">Page 2</a>
             </li>
             <li class="list-item">
               <a href="./third.html" class="item">Page 3</a>
@@ -28,6 +38,9 @@
             </li>
             <li class="list-item">
               <a href="#" class="item link">Page 5</a>
+            </li>
+            <li class="list-item">
+              <a href="./buld.html" class="item">Page 6 (Practice JS)</a>
             </li>
           </ul>
         </nav>
