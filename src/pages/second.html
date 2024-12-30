@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/main.css" />
     <script type="module" src="../js/burger.js"></script>
+    <script type="module" src="../js/darkMode.js"></script>
     <title>214</title>
   </head>
   <body>
@@ -14,6 +15,17 @@
           <a href="#" class="header__logo"
             ><img src="../img/logo.svg" alt="logo" class="logo__img"
           /></a>
+          <div class="theme__container">
+            <label for="checkbox" class="theme__switch">
+              <input
+                type="checkbox"
+                id="checkbox"
+                class="theme__checkbox"
+                data-darkMode
+              />
+              <span class="theme__circle"></span>
+            </label>
+          </div>
           <button class="burger">
             <span class="burger__stick"></span>
           </button>
