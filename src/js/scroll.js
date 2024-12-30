@@ -2,7 +2,7 @@
 
 let lastScrollTop = 0;
 
-const header = document.querySelector("header");
+const header = document.querySelector(".header__mix");
 
 window.addEventListener("scroll", function () {
   const scrollTop =
